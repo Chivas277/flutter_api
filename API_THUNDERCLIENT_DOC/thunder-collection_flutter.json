@@ -1,0 +1,260 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "flutter",
+    "dateExported": "2024-03-10T14:29:14.406Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "298fc095-cab3-4e5b-a129-bd5bc50f6a91",
+            "name": "Banner",
+            "containerId": "",
+            "created": "2024-03-09T12:10:02.067Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "edca3a98-64a0-49ea-b1a0-960c2503a64f",
+            "name": "cate",
+            "containerId": "",
+            "created": "2024-03-09T14:03:50.269Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5c6ff53e-6d77-409c-93ce-ba745c52061e",
+            "name": "product",
+            "containerId": "",
+            "created": "2024-03-09T17:07:50.305Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "d25d8111-8cca-49d3-9456-84a3bc292599",
+            "name": "account",
+            "containerId": "",
+            "created": "2024-03-10T13:38:29.453Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "86692094-b024-457f-9d9e-44c83b6aaade",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "298fc095-cab3-4e5b-a129-bd5bc50f6a91",
+            "name": "get banner",
+            "url": "http://localhost:1337/api/banners?populate=image",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-09T12:11:25.059Z",
+            "modified": "2024-03-09T14:22:00.767Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "populate",
+                    "value": "image",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "5d9f9372-76eb-4b54-9c0a-04a4d913bb93",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "edca3a98-64a0-49ea-b1a0-960c2503a64f",
+            "name": "get popular cate",
+            "url": "http://localhost:1337/api/popular-categories?populate=category,category.image&pagination[start]=0&pagination[limit]=1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-09T14:03:55.380Z",
+            "modified": "2024-03-09T14:43:39.957Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "populate",
+                    "value": "category,category.image",
+                    "isPath": false
+                },
+                {
+                    "name": "pagination[start]",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "pagination[limit]",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "d0fafb17-c19d-49fe-b6d7-d77dfb5dae72",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "5c6ff53e-6d77-409c-93ce-ba745c52061e",
+            "name": "popular-pro",
+            "url": "http://localhost:1337/api/popular-products?populate=product,product.image",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-09T17:07:58.477Z",
+            "modified": "2024-03-09T17:12:53.209Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "populate",
+                    "value": "product,product.image",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "be989700-5b2d-4215-ba48-4803b0c5d1fa",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "5c6ff53e-6d77-409c-93ce-ba745c52061e",
+            "name": "get product",
+            "url": "http://localhost:1337/api/products?populate=image,tags",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-09T18:20:14.870Z",
+            "modified": "2024-03-09T18:21:04.874Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "populate",
+                    "value": "image,tags",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "35bbe7d1-adc8-43d9-9c2d-618311fbbcdb",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "5c6ff53e-6d77-409c-93ce-ba745c52061e",
+            "name": "getByName",
+            "url": "http://localhost:1337/api/products?populate=image,tags&filters[name][$contains]=VGA",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-10T11:58:20.658Z",
+            "modified": "2024-03-10T11:58:24.135Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "populate",
+                    "value": "image,tags",
+                    "isPath": false
+                },
+                {
+                    "name": "filters[name][$contains]",
+                    "value": "VGA",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e29d2c5b-abcf-46a4-aa09-b3e5495731ce",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "edca3a98-64a0-49ea-b1a0-960c2503a64f",
+            "name": "get cate",
+            "url": "http://localhost:1337/api/categories?populate=image",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-10T12:38:46.343Z",
+            "modified": "2024-03-10T12:39:17.641Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "populate",
+                    "value": "image",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "69929df8-3443-40b9-93ed-0d7b963b1895",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "d25d8111-8cca-49d3-9456-84a3bc292599",
+            "name": "sign_up",
+            "url": "http://localhost:1337/api/auth/local/register",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-10T13:38:36.300Z",
+            "modified": "2024-03-10T14:24:42.492Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"h7a\",\n  \"email\":\"h7a@gmail.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bfa850aa-3473-4fd6-9555-2d80be27510b",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "d25d8111-8cca-49d3-9456-84a3bc292599",
+            "name": "createMe",
+            "url": "http://localhost:1337/api/profile/me",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-10T14:15:45.187Z",
+            "modified": "2024-03-10T14:25:30.198Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "Token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEwMDgwMzkxLCJleHAiOjE3MTI2NzIzOTF9.rDcEI46mmIiX1paiCM-FfmScFSyb-Or4oBZu5cPjkJk",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullName\":\"admin\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEwMDgwNTY1LCJleHAiOjE3MTI2NzI1NjV9.B0rlDCEeQicN4Ot_FihANoVrkeTH55Tu-L8Y0Zmnhrs",
+                "bearerPrefix": "Bearer "
+            },
+            "tests": []
+        },
+        {
+            "_id": "78298282-3325-4c79-a2b1-5487ed483db6",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "d25d8111-8cca-49d3-9456-84a3bc292599",
+            "name": "sign_in",
+            "url": "http://localhost:1337/api/auth/local",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-10T14:18:37.209Z",
+            "modified": "2024-03-10T14:19:51.077Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"identifier\":\"admin@gmail.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4f6dab4-be76-488d-9264-9a4eea6b489b",
+            "colId": "320feb7c-44ac-4d5a-a3e5-fc07de3b959d",
+            "containerId": "d25d8111-8cca-49d3-9456-84a3bc292599",
+            "name": "profileGetMe",
+            "url": "http://localhost:1337/api/profile/me",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-10T14:27:47.084Z",
+            "modified": "2024-03-10T14:28:20.540Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEwMDgwNTY1LCJleHAiOjE3MTI2NzI1NjV9.B0rlDCEeQicN4Ot_FihANoVrkeTH55Tu-L8Y0Zmnhrs"
+            },
+            "tests": []
+        }
+    ]
+}
